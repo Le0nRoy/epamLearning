@@ -8,9 +8,6 @@
  * Copyright notice
  */
 
-import tests.ArraysTest;
-import tests.StringsTest;
-
 public class Main {
     static public void main( String[] args ){
 
