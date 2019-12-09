@@ -1,3 +1,5 @@
+package com.vtrishin.codingbattests;
+
 import java.util.Arrays;
 
 public class MyArrays {

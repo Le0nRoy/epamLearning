@@ -1,3 +1,5 @@
+package com.vtrishin.codingbattests;
+
 public class MyStrings {
     public String helloName(String name) {
         return "Hello " + name + "!";
