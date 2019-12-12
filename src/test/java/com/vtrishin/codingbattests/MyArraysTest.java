@@ -2,132 +2,299 @@ package com.vtrishin.codingbattests;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 
 class MyArraysTest {
 
-    @Test
-    void firstLast6() {
-        MyArrays testedClass = new MyArrays();
-        boolean actual = testedClass.firstLast6(new int[] {1, 2, 6});
-        assertTrue(actual);
-        actual = testedClass.firstLast6(new int[] {6, 1, 2, 3});
-        assertTrue(actual);
-        actual = testedClass.firstLast6(new int[] {13, 6, 1, 2, 3});
-        assertFalse(actual);
+    static class firstLast6 {
+        @Test
+        void shouldReturnTrueLastIsSix() {
+            int[] testedData = new int[]{ 1, 2, 6 };
+            boolean actual = testedClass.firstLast6( testedData );
+            assertTrue( actual );
+        }
+
+        @Test
+        void shouldReturnTrueFirstIsSix() {
+            int[] testedData = new int[]{ 6, 1, 2, 3 };
+            boolean actual = testedClass.firstLast6( testedData );
+            assertTrue( actual );
+        }
+
+        @Test
+        void shouldReturnTrueFirstAndLastAreSix() {
+            int[] testedData = new int[]{ 6, 6 };
+            boolean actual = testedClass.firstLast6( testedData );
+            assertTrue( actual );
+        }
+
+        @Test
+        void shouldReturnFalseNotFirstNorLastAreSix() {
+            int[] testedData = new int[]{ 13, 6, 1, 2, 3 };
+            boolean actual = testedClass.firstLast6( testedData );
+            assertFalse( actual );
+        }
     }
 
-    @Test
-    void sameFirstLast() {
-        MyArrays testedClass = new MyArrays();
-        boolean actual = testedClass.sameFirstLast(new int[] {1, 2, 3});
-        assertFalse(actual);
-        actual = testedClass.sameFirstLast(new int[] {1, 2, 3, 1});
-        assertTrue(actual);
-        actual = testedClass.sameFirstLast(new int[] {1, 2, 1});
-        assertTrue(actual);
+    static class sameFirstLast {
+        @Test
+        void shouldReturnFalseFirstNotEqualsLast() {
+            int[] testedData = new int[]{ 1, 2, 3 };
+            boolean actual = testedClass.sameFirstLast( testedData );
+            assertFalse( actual );
+        }
+
+        @Test
+        void shouldReturnTrueFirstEqualsLast() {
+            int[] testedData = new int[]{ 1, 2, 3, 1 };
+            boolean actual = testedClass.sameFirstLast( testedData );
+            assertTrue( actual );
+        }
+
+        @Test
+        void shouldReturnTrueGivenOnlyZero() {
+            int[] testedData = new int[]{ 0 };
+            boolean actual = testedClass.sameFirstLast( testedData );
+            assertTrue( actual );
+        }
+
+        @Test
+        void shouldReturnFalseGivenEmptyArray() {
+            int[] testedData = new int[]{};
+            boolean actual = testedClass.sameFirstLast( testedData );
+            assertFalse( actual );
+        }
     }
 
-    @Test
-    void makePi() {
-        MyArrays testedClass = new MyArrays();
-        int[] actual = testedClass.makePi();
-        int[] expected = new int[] {3, 1, 4};
-        assertArrayEquals(expected, actual);
+    static class makePi {
+        @Test
+        void shouldReturnArrayWithFirstThreeCyphersOfPi() {
+            int[] actual = testedClass.makePi();
+            int[] expected = new int[]{ 3, 1, 4 };
+            assertArrayEquals( expected, actual );
+        }
     }
 
-    @Test
-    void commonEnd() {
-        MyArrays testedClass = new MyArrays();
-        boolean actual = testedClass.commonEnd(new int[] {1, 2, 3}, new int[] {7, 3});
-        assertTrue(actual);
-        actual = testedClass.commonEnd(new int[] {1, 2, 3}, new int[] {7, 3, 2});
-        assertFalse(actual);
-        actual = testedClass.commonEnd(new int[] {1, 2, 3}, new int[] {1, 3});
-        assertTrue(actual);
+    static class commonEnd {
+        @Test
+        void shouldReturnTrueLastElementsAreEqual() {
+            int[] testedData1 = new int[]{ 1, 2, 3 };
+            int[] testedData2 = new int[]{ 7, 3 };
+            boolean actual = testedClass.commonEnd( testedData1, testedData2 );
+            assertTrue( actual );
+        }
+
+        @Test
+        void shouldReturnFalseLastElementsAreNotEqual() {
+            int[] testedData1 = new int[]{ 1, 2, 3 };
+            int[] testedData2 = new int[]{ 7, 3, 2 };
+            boolean actual = testedClass.commonEnd( testedData1, testedData2 );
+            assertFalse( actual );
+        }
+
+        @Test
+        void shouldReturnTrueTheOnlyElementsAreEqual() {
+            int[] testedData1 = new int[]{ 1 };
+            int[] testedData2 = new int[]{ 1 };
+            boolean actual = testedClass.commonEnd( testedData1, testedData2 );
+            assertTrue( actual );
+        }
+
+        @Test
+        void shouldReturnFalseOneArrayIsEmpty() {
+            int[] testedData1 = new int[]{};
+            int[] testedData2 = new int[]{ 1 };
+            boolean actual = testedClass.commonEnd( testedData1, testedData2 );
+            assertTrue( actual );
+        }
+
+        @Test
+        void shouldReturnFalseBothArraysAreEmpty() {
+            int[] testedData1 = new int[]{};
+            int[] testedData2 = new int[]{};
+            boolean actual = testedClass.commonEnd( testedData1, testedData2 );
+            assertTrue( actual );
+        }
     }
 
-    @Test
-    void sum3() {
-        MyArrays testedClass = new MyArrays();
-        int actual = testedClass.sum3(new int[] {1, 2, 3});
-        int expected = 6;
-        assertEquals(expected, actual);
-        actual = testedClass.sum3(new int[] {5, 11, 2});
-        expected = 18;
-        assertEquals(expected, actual);
-        actual = testedClass.sum3(new int[] {7, 0, 0});
-        expected = 7;
-        assertEquals(expected, actual);
+    static class sum3 {
+        @Test
+        void shouldReturnSixAsSumOfElemnts() {
+            int[] testedData = new int[]{ 1, 2, 3 };
+            int actual = testedClass.sum3( testedData );
+            int expected = 6;
+            assertEquals( expected, actual );
+        }
+
+        @Test
+        void shouldReturnSameElementIfItIsOnlyInArray() {
+            int[] testedData = new int[]{ 1 };
+            int actual = testedClass.sum3( testedData );
+            int expected = 1;
+            assertEquals( expected, actual );
+        }
+
+        @Test
+        void shouldReturnZeroIfGivenEmptyArray() {
+            int[] testedData = new int[]{};
+            int actual = testedClass.sum3( testedData );
+            int expected = 0;
+            assertEquals( expected, actual );
+        }
     }
 
-    @Test
-    void rotateLeft3() {
-        MyArrays testedClass = new MyArrays();
-        int[] actual = testedClass.rotateLeft3(new int[] {1, 2, 3});
-        int[] expected = new int[] {2, 3, 1};
-        assertArrayEquals(expected, actual);
-        actual = testedClass.rotateLeft3(new int[] {5, 11, 9});
-        expected = new int[] {11, 9, 5};
-        assertArrayEquals(expected, actual);
-        actual = testedClass.rotateLeft3(new int[] {7, 0, 0});
-        expected = new int[] {0, 0, 7};
-        assertArrayEquals(expected, actual);
+    static class rotateLeft3 {
+        @Test
+        void shouldReturnArrayWithElementsShiftedToLeftByOne() {
+            int[] testedData = new int[]{ 1, 2, 3 };
+            int[] actual = testedClass.rotateLeft3( testedData );
+            int[] expected = new int[]{ 2, 3, 1 };
+            assertArrayEquals( expected, actual );
+        }
+
+        @Test
+        void shouldReturnEmptyArrayIfGivenEmptyArray() {
+            int[] testedData = new int[]{};
+            int[] actual = testedClass.reverse3( testedData );
+            int[] expected = new int[]{};
+            assertArrayEquals( expected, actual );
+        }
+
+        @Test
+        void shouldReturnSameArrayIfGivenOneElementArray() {
+            int[] testedData = new int[]{ 1 };
+            int[] actual = testedClass.reverse3( testedData );
+            int[] expected = new int[]{ 1 };
+            assertArrayEquals( expected, actual );
+        }
+
+        @Test
+        void shouldReturnArrayWithElementsShiftedToLeftByOneIfGivenTwoElements() {
+            int[] testedData = new int[]{ 1, 2 };
+            int[] actual = testedClass.rotateLeft3( testedData );
+            int[] expected = new int[]{ 2, 3 };
+            assertArrayEquals( expected, actual );
+        }
     }
 
-    @Test
-    void reverse3() {
-        MyArrays testedClass = new MyArrays();
-        int[] actual = testedClass.reverse3(new int[] {1, 2, 3});
-        int[] expected = new int[] {3, 2, 1};
-        assertArrayEquals(expected, actual);
-        actual = testedClass.reverse3(new int[] {5, 11, 9});
-        expected = new int[] {9, 11, 5};
-        assertArrayEquals(expected, actual);
-        actual = testedClass.reverse3(new int[] {7, 0, 0});
-        expected = new int[] {0, 0, 7};
-        assertArrayEquals(expected, actual);
+    static class reverse3 {
+        @Test
+        void shouldReturnReversedArrayIfGivenTwoOrMoreElements() {
+            int[] testedData = new int[]{ 1, 2, 3 };
+            int[] actual = testedClass.reverse3( testedData );
+            int[] expected = new int[]{ 3, 2, 1 };
+            assertArrayEquals( expected, actual );
+        }
+
+        @Test
+        void shouldReturnEmptyArrayIfGivenEmptyArray() {
+            int[] testedData = new int[]{};
+            int[] actual = testedClass.reverse3( testedData );
+            int[] expected = new int[]{};
+            assertArrayEquals( expected, actual );
+        }
+
+        @Test
+        void shouldReturnSameArrayIfGivenOneElementArray() {
+            int[] testedData = new int[]{ 1 };
+            int[] actual = testedClass.reverse3( testedData );
+            int[] expected = new int[]{ 1 };
+            assertArrayEquals( expected, actual );
+        }
     }
 
-    @Test
-    void maxEnd3() {
-        MyArrays testedClass = new MyArrays();
-        int[] actual = testedClass.maxEnd3(new int[] {1, 2, 3});
-        int[] expected = new int[] {3, 3, 3};
-        assertArrayEquals(expected, actual);
-        actual = testedClass.maxEnd3(new int[] {5, 11, 9});
-        expected = new int[] {11, 11, 11};
-        assertArrayEquals(expected, actual);
-        actual = testedClass.maxEnd3(new int[] {15, 8, 4});
-        expected = new int[] {15, 15, 15};
-        assertArrayEquals(expected, actual);
+    static class maxEnd3 {
+        @Test
+        void shouldReturnArrayFilledBy3() {
+            int[] testedData = new int[]{ 1, 2, 3 };
+            int[] actual = testedClass.maxEnd3( testedData );
+            int[] expected = new int[]{ 3, 3, 3 };
+            assertArrayEquals( expected, actual );
+        }
+
+        @Test
+        void shouldReturnEmptyArrayIfGivenEmptyArray() {
+            int[] testedData = new int[]{};
+            int[] actual = testedClass.maxEnd3( testedData );
+            int[] expected = new int[]{};
+            assertArrayEquals( expected, actual );
+        }
+
+        @Test
+        void shouldReturnSameArrayIfGivenOneElementArray() {
+            int[] testedData = new int[]{ 3 };
+            int[] actual = testedClass.maxEnd3( testedData );
+            int[] expected = new int[]{ 3 };
+            assertArrayEquals( expected, actual );
+        }
     }
 
-    @Test
-    void sum2() {
-        MyArrays testedClass = new MyArrays();
-        int actual = testedClass.sum2(new int[] {1, 2, 3});
-        int expected = 3;
-        assertEquals(expected, actual);
-        actual = testedClass.sum2(new int[] {1, 1});
-        expected = 2;
-        assertEquals(expected, actual);
-        actual = testedClass.sum2(new int[] {1, 1, 1, 1});
-        expected = 2;
-        assertEquals(expected, actual);
+    static class sum2 {
+        @Test
+        void shouldReturn5FirstTwoElements2And3() {
+            int[] testedData = new int[]{ 2, 3, 8, 18, 9 };
+            int actual = testedClass.sum2( testedData );
+            int expected = 5;
+            assertEquals( expected, actual );
+        }
+
+        @Test
+        void shouldReturn1GivenOnlyOneElementThatIs1() {
+            int[] testedData = new int[]{ 1 };
+            int actual = testedClass.sum2( testedData );
+            int expected = 1;
+            assertEquals( expected, actual );
+        }
+
+        @Test
+        void shouldReturn0GivenEmptyArray() {
+            int[] testedData = new int[]{};
+            int actual = testedClass.sum2( testedData );
+            int expected = 0;
+            assertEquals( expected, actual );
+        }
+
+        @Test
+        void shouldReturnMinus5FirstTwoElementsMinus8And3() {
+            int[] testedData = new int[]{ -8, 3, 8, 18, 9 };
+            int actual = testedClass.sum2( testedData );
+            int expected = -5;
+            assertEquals( expected, actual );
+        }
     }
 
-    @Test
-    void middleWay() {
-        MyArrays testedClass = new MyArrays();
-        int[] actual = testedClass.middleWay(new int[] {1, 2, 3}, new int[] {4, 5, 6});
-        int[] expected = new int[] {2, 5};
-        assertArrayEquals(expected, actual);
-        actual = testedClass.middleWay(new int[] {7, 7, 7}, new int[] {3, 8, 0});
-        expected = new int[] {7, 8};
-        assertArrayEquals(expected, actual);
-        actual = testedClass.middleWay(new int[] {5, 2, 9}, new int[] {1, 4, 5});
-        expected = new int[] {2, 4};
-        assertArrayEquals(expected, actual);
+    static class middleWay {
+        @Test
+        void shouldReturnArrayWith2And5AsMiddlesOfGivenArrays() {
+            int[] testedData1 = new int[]{ 1, 2, 3 };
+            int[] testedData2 = new int[]{ 4, 5, 6 };
+            int[] actual = testedClass.middleWay( testedData1, testedData2 );
+            int[] expected = new int[]{ 2, 5 };
+            assertArrayEquals( expected, actual );
+        }
+
+        @Test
+        void shouldReturnEmptyArrayOneOfArraysEmpty() {
+            int[] testedData1 = new int[]{};
+            int[] testedData2 = new int[]{ 4, 5, 6 };
+            int[] actual = testedClass.middleWay( testedData1, testedData2 );
+            int[] expected = new int[]{};
+            assertArrayEquals( expected, actual );
+        }
+
+        @Test
+        void shouldReturnConcatOfGivenArraysWithOneElement() {
+            int[] testedData1 = new int[]{ 1 };
+            int[] testedData2 = new int[]{ 4 };
+            int[] actual = testedClass.middleWay( testedData1, testedData2 );
+            int[] expected = new int[]{ 1, 4 };
+            assertArrayEquals( expected, actual );
+        }
     }
+
+    // сделать отдельный блок инициализации
+    static private MyArrays testedClass = new MyArrays();
 }
