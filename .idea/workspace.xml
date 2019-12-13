@@ -2,35 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc6f9dd5-c171-4ebe-844e-989ef1fbce91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_0_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com-vtrishin-codingbattests.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/comboStringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/commonEndTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/extraEndTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/firstHalfTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/firstLast6Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/firstTwoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/helloNameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/makeAbbaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/makeOutWordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/makePiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/makeTagsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/maxEnd3Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/middleWayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/nonStartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/reverse3Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/rotateLeft3Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/sameFirstLastTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/sum2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/sum3Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/withoutEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestsForEPAM.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestsForEPAM/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestsForEPAM/MyArrays.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestsForEPAM/MyStrings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TestsForEPAM/MyArraysTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TestsForEPAM/MyStringsTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyArrays.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyStrings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/MyArraysTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/MyStringsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com-vtrishin-codingbattests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/com-vtrishin-codingbattests.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vtrishin/codingbattests/MyArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vtrishin/codingbattests/MyArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vtrishin/codingbattests/MyStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vtrishin/codingbattests/MyStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/MyArraysTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vtrishin/codingbattests/MyStringsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,14 +41,31 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1UlDxSLOjh7V5Tc4XUaAewFXahO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -64,7 +84,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.sum2Test">
+    <configuration name="maxEnd3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-vtrishin-codingbattests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vtrishin.codingbattests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vtrishin.codingbattests" />
+      <option name="MAIN_CLASS_NAME" value="com.vtrishin.codingbattests.maxEnd3Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="middleWayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-vtrishin-codingbattests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vtrishin.codingbattests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vtrishin.codingbattests" />
+      <option name="MAIN_CLASS_NAME" value="com.vtrishin.codingbattests.middleWayTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reverse3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-vtrishin-codingbattests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vtrishin.codingbattests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vtrishin.codingbattests" />
+      <option name="MAIN_CLASS_NAME" value="com.vtrishin.codingbattests.reverse3Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rotateLeft3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-vtrishin-codingbattests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vtrishin.codingbattests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vtrishin.codingbattests" />
+      <option name="MAIN_CLASS_NAME" value="com.vtrishin.codingbattests.rotateLeft3Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sum2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-vtrishin-codingbattests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vtrishin.codingbattests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vtrishin.codingbattests" />
+      <option name="MAIN_CLASS_NAME" value="com.vtrishin.codingbattests.sum2Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -88,6 +183,15 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.sum2Test" />
+        <item itemvalue="JUnit.middleWayTest" />
+        <item itemvalue="JUnit.maxEnd3Test" />
+        <item itemvalue="JUnit.reverse3Test" />
+        <item itemvalue="JUnit.rotateLeft3Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -107,7 +211,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
